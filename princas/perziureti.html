@@ -1,0 +1,50 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1257">
+<style>
+<!--
+A { color: "#800000"; text-decoration: none }
+A:hover { color: "#808000"}
+-->
+</style>
+<title>Princo laiškai</title>
+</head>
+
+<body background="http://www-public.osf.lt/~lauris/princas/pics/texture/back1.jpg">
+
+<h3 align="center">Laiško peržiūrėjimas</h3>
+<div align="center"><center>
+
+<table border="3">
+  <tr>
+    <td width="150">Data: %%data%%<p>Gavėjas: <br>
+    <b>%%gvardas%%</b></p>
+    <p>Siuntėjas: <br>
+    <b><a HREF="mailto:%%semail%%">%%svardas%%</a></b></td>
+    <td><p align="center"><img src="%%paveikslas%%"> </p>
+    <hr align="center">
+    <p align="center"><i>%%mintis%%</i> </td>
+  </tr>
+  <tr>
+    <td COLSPAN="2"><p align="center">%%laiskas%% </td>
+  </tr>
+</table>
+</center></div>
+
+<p align="center">Jei tau patinka tai, ką tu matai, tai spausk mygtuką &quot;Siųsti
+laišką&quot;, jei matai klaidų - spausk mygtuką &quot;back&quot; savo browser'yje.</p>
+
+<form METHOD="POST" ACTION="laiskai.cgi">
+  <input type="hidden" name="svardas" value="%%svardas%%"><input type="hidden" name="semail"
+  value="%%semail%%"><input type="hidden" name="gvardas" value="%%gvardas%%"><input
+  type="hidden" name="gemail" value="%%gemail%%"><input type="hidden" name="paveiksl"
+  value="%%paveiksl%%"><input type="hidden" name="pranesti" value="%%pranesti%%"><input
+  type="hidden" name="laiskas" value="%%laiskas%%"><input type="hidden" name="data"
+  value="%%data%%"><input type="hidden" name="mintis" value="%%mintis%%"><input
+  type="hidden" name="siusti" value="siusti"><div align="center"><center><p><input
+  type="submit" value="siųsti laišką"> </p>
+  </center></div>
+</form>
+</body>
+</html>
